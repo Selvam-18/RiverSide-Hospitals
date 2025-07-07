@@ -1,0 +1,132 @@
+.hospital{
+    height: 100vh;
+    align-content: center;
+    justify-content: center;
+}
+.hospital h1{
+    color: #007c9d;
+}
+
+nav{
+    background-color: #007c9d;
+    font-size: larger;
+    font-weight: 600;
+}
+.navbar-brand{
+    color: white;
+    
+}
+
+.navbar-nav{
+    margin-left: auto;
+}
+
+.nav-link {
+    color: white;
+    padding-right: 3px;
+}
+
+.nav-link:hover{
+    background-color: white;
+    color: #007c9d;
+    border-radius: 5px;
+}
+.doc-card{
+   
+    height: auto;
+    align-content: center;
+    justify-content: center;
+}
+
+.doc-card img{
+    border-radius: 10px;
+}
+
+.patient-data{
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+    color: #007c9d;
+}
+
+
+.patient-data-card{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+#facilities{
+    background-color: #007c9d;
+    color: white;
+}
+
+.features{
+    background-color: white;
+    margin: 5px 0px;
+    padding: 5px 0px;
+    border-radius: 10px;
+}
+
+#admin{
+    background-color:#007c9d ;
+    color: white;
+    /* height: 50vh; */
+}
+
+#admin button{
+    background-color: white;
+    color: #007c9d;
+    border: 1px solid #007c9d;
+}
+#admin button:hover{
+    background-color: #007c9d;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+#doctors{
+    border-radius: 10px;
+    background-color: #007c9d;
+    color: white;
+}
+
+.backToHome{
+    color: #007c9d;
+    background-color: white;
+}
+.backToHome:hover{
+    background-color: #007c9d;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.view-data{
+    color: #007c9d;
+    background-color: white;
+
+}
+.view-data:hover{
+    background-color: #007c9d;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+label{
+    font-size: larger;
+    font-weight: 600;
+}
+
+.patient-data-submit{
+    color: white;
+    background-color: #007c9d;
+
+}
+
+.patient-data-submit:hover{
+    background-color: white;
+    color: #007c9d;
+    border: 1px solid #007c9d;
+    border-radius: 5px;
+}

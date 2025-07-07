@@ -1,0 +1,182 @@
+<%- include('partials/header') %>
+
+
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">RiverSide Hospitals</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#facilities">Facilities</a>
+          <a class="nav-link" href="#doctors">Doctors</a>
+          <a class="nav-link" href="#admin">Admin</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+<div class="container hospital my-3">
+  <div class="px-4 pt-5 my-5 text-center col-lg-12">
+    <h1 class="display-4 fw-bold ">RiverSide Hospitals</h1>
+    <p class="mx-auto lead  mb-4 col-lg-6">Where excellence meets compassion</p>  
+  </div>
+</div>
+
+
+
+<div class="container-fluid" id="facilities" >
+    <div class="container my-2 px-4 py-5">
+        <div class="row row-cols-1 row-cols-md-2 align-items-md-center g-5 py-5">
+          <div class="col d-flex flex-column align-items-start gap-2">
+            <h2 class="fw-bold ">Delivering Excellence, Everywhere</h2>
+            <p >Established in 1983 by Dr. Prathap C Reddy, RiverSide Hospitals has set new benchmarks in medical excellence, innovation, and patient-centric care. With India’s largest healthcare network and advanced technology, we deliver world-class treatment and exceptional outcomes.</p>
+          </div>
+    
+          <div class="col features">
+            <div class="row row-cols-1 row-cols-sm-2 g-4">
+              <div class="col d-flex flex-column gap-2 text-center">
+                <div>
+                  <img   src="/assets/icons/hospital.png" height="50px" width="50px"/>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">73+ Hospitals</h4>
+                <p class="text-body-secondary">India's largest private hospital network, delivering advanced healthcare</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2 text-center">
+                <div>
+                  <img  src="/assets/icons/medical.png" height="50px" width="50px"/>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">11,000+ Doctors</h4>
+                <p class="text-body-secondary">Leading medical experts providing exceptional care across India</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2 text-center">
+                <div>
+                  <img  src="/assets/icons/tablets.png" height="50px" width="50px"/>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">6,500+ Pharmacies</h4>
+                <p class="text-body-secondary">Ensuring seamless access to medicine across the nation</p>
+              </div>
+    
+              <div class="col d-flex flex-column gap-2 text-center">
+                <div>
+                  <img  src="/assets/icons/heart-rate.png" height="50px" width="50px"/>
+                </div>
+                <h4 class="fw-semibold mb-0 text-body-emphasis">2,300+ Diagnostic Centers</h4>
+                <p class="text-body-secondary">Precision diagnostics accessible across India</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+
+<div class="container my-5" id="doctors">
+  <div class="row">
+    <div class="col-12 my-2">
+      <h1>Excelled Doctors</h1>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/keerthyyy.jpeg" height="200px">
+      <h3>Dr. S. Kavya</h3>
+      <h5>Pediatrician</h5>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/Vjs.jpeg" height="200px">
+      <h3>Dr. P. Dharman</h3>
+      <h5>Neurobiologist</h5>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/Aandavar.jpeg" height="200px">
+      <h3>Dr. K. Vasool Raja</h3>
+      <h5>Ortho</h5>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/sam.jpeg" height="200px">
+      <h3>Dr. V. Mithra</h3>
+      <h5>General Physician</h5>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/Sk.jpeg" height="200px">
+      <h3>Dr. S. Varun</h3>
+      <h5>Surgeon</h5>
+    </div>
+    <div class="col-lg-4 col-md-4 doc-card text-center">
+      <img class="p-2 m-2" src="/assets/doctors/vadivelu.jpeg" height="200px">
+      <h3>Dr. M. Singaram</h3>
+      <h5>Dentist</h5>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="admin">
+
+  <div class="container my-5" >
+    <div class="row">
+      <h1 class="my-2 py-2">Admin Panel</h1>
+  
+      <div class="col-lg-6 col-md-6 my-3">
+        <% if(typeof alert!='undefined') {%>
+          <% alert.forEach(function(error) { %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong><%= error.msg %></strong> 
+              
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% }) %>
+            <% } %>
+            <form class="w-50" action="/login" method="POST">
+              <h1 class="h3 mb-3 fw-bold">Sign in</h1>
+              <div class="form-floating py-2">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+              <div class="form-floating py-2">
+                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+              <!-- <a class="btn btn-primary" href="/login" role="button">Sign in</a> -->
+              <button type="submit" class="btn btn-lg">Sign In</button>
+            </form>
+          </div>
+          
+          <div class="col-lg-6 col-md-6 my-3">
+            
+           
+
+        <form class="w-50" action="/register" method="POST">
+
+           <% if(typeof regAlert!='undefined') {%>
+          <% regAlert.forEach(function(error) { %>
+            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+              <strong><%= error.msg %></strong> 
+              
+              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            <% }) %>
+            <% } %>
+
+          <h1 class="h3 mb-3 fw-bold">Register Admin</h1>
+          <div class="form-floating py-2">
+            <input type="email"  name="email" class="form-control" id="floatingInput" placeholder="name@example.com"required>
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating py-2">
+            <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Create password" required>
+            <label for="floatingPassword">Password</label>
+          </div>
+          <button type="submit" class="btn btn-lg">Sign up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<%- include('partials/footer') %>
